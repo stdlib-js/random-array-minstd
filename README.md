@@ -33,6 +33,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/random-array-minstd/tags). For example,
+
+```javascript
 minstd = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.0.1-umd/browser.js' )
 ```
 
@@ -45,7 +50,7 @@ var minstd = require( 'path/to/vendor/umd/random-array-minstd/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.0.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -260,7 +265,7 @@ var sz = minstd.byteLength;
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.0.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
