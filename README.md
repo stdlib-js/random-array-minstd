@@ -35,20 +35,30 @@ limitations under the License.
 
 > Create an array containing pseudorandom numbers generated using a [linear congruential pseudorandom number generator][@stdlib/random/base/minstd] (LCG).
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-array-minstd
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
+var minstd = require( '@stdlib/random-array-minstd' );
 ```
 
 #### minstd( len\[, options] )
@@ -248,14 +258,9 @@ var sz = minstd.byteLength;
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
+```javascript
+var logEach = require( '@stdlib/console-log-each' );
+var minstd = require( '@stdlib/random-array-minstd' );
 
 // Create a function for generating random arrays originating from the same state:
 var random = minstd.factory({
@@ -282,10 +287,6 @@ var x4 = random.normalized( 15 );
 
 // Print the contents:
 logEach( '%f', x4 );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -295,6 +296,15 @@ logEach( '%f', x4 );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random-array/minstd-shuffle`][@stdlib/random/array/minstd-shuffle]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers generated using a linear congruential pseudorandom number generator (LCG) whose output is shuffled.</span>
+-   <span class="package-name">[`@stdlib/random-array/randu`][@stdlib/random/array/randu]</span><span class="delimiter">: </span><span class="description">create an array containing uniformly distributed pseudorandom numbers between 0 and 1.</span>
+-   <span class="package-name">[`@stdlib/random-base/minstd`][@stdlib/random/base/minstd]</span><span class="delimiter">: </span><span class="description">A linear congruential pseudorandom number generator (LCG) based on Park and Miller.</span>
+-   <span class="package-name">[`@stdlib/random-strided/minstd`][@stdlib/random/strided/minstd]</span><span class="delimiter">: </span><span class="description">fill a strided array with pseudorandom numbers generated using a linear congruential pseudorandom number generator (LCG).</span>
 
 </section>
 
@@ -309,7 +319,7 @@ logEach( '%f', x4 );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -369,15 +379,25 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/random-array-minstd/main/LICENSE
 
-[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd/tree/esm
+[@stdlib/random/base/minstd]: https://github.com/stdlib-js/random-base-minstd
 
-[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes/tree/esm
+[@stdlib/array/typed-real-float-dtypes]: https://github.com/stdlib-js/array-typed-real-float-dtypes
 
-[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes/tree/esm
+[@stdlib/array/typed-real-dtypes]: https://github.com/stdlib-js/array-typed-real-dtypes
 
-[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64/tree/esm
+[@stdlib/array/float64]: https://github.com/stdlib-js/array-float64
 
-[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32/tree/esm
+[@stdlib/array/int32]: https://github.com/stdlib-js/array-int32
+
+<!-- <related-links> -->
+
+[@stdlib/random/array/minstd-shuffle]: https://github.com/stdlib-js/random-array-minstd-shuffle
+
+[@stdlib/random/array/randu]: https://github.com/stdlib-js/random-array-randu
+
+[@stdlib/random/strided/minstd]: https://github.com/stdlib-js/random-strided-minstd
+
+<!-- </related-links> -->
 
 </section>
 
