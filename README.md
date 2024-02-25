@@ -42,13 +42,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.2.1-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.2.1-esm/index.mjs';
 ```
 
 #### minstd( len\[, options] )
@@ -255,7 +255,7 @@ var sz = minstd.byteLength;
 <script type="module">
 
 import logEach from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each@esm/index.mjs';
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@esm/index.mjs';
+import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-minstd@v0.2.1-esm/index.mjs';
 
 // Create a function for generating random arrays originating from the same state:
 var random = minstd.factory({
