@@ -58,7 +58,7 @@
     "@stdlib/array-float64": "^0.2.1",
     "@stdlib/array-int32": "^0.2.1",
     "@stdlib/assert-is-int32array": "^0.2.1",
-    "@stdlib/console-log-each": "^0.2.0",
+    "@stdlib/console-log-each": "^0.2.1",
     "@stdlib/constants-int32-max": "^0.2.1",
     "@stdlib/math-base-assert-is-nan": "^0.2.1",
     "@stdlib/math-base-assert-is-nanf": "^0.2.1",
